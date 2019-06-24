@@ -1,0 +1,233 @@
+@font-face {
+    font-family: BadScript;
+    src: url("../fonts/16905.woff2") format("woff2"), url("../fonts/BadScript.woff") format("woff");
+}
+body {
+    font-family: BadScript;
+    color: #fff;
+    background-image: url("https://pics.freeartbackgrounds.com/fullhd/Beautiful_Sky_Background-802.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    display: none;
+}
+
+input {
+    border-radius: 5px;
+    padding-left: 1%;
+}
+
+.button {
+    padding: 5px 8px 5px 8px;
+}
+
+
+
+#logo {
+    height: 60px;
+}
+
+.carousel-inner {
+    max-height: 400px;
+    width: 100%;
+}
+
+
+.padding {
+    padding-top: 2%;
+}
+
+.col-lg-2 a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+#contact a {
+    margin: 0 0 0 2%;
+}
+
+#contact {
+    margin-top: 2%;
+}
+
+
+a:hover {
+    color: #DFDDDF;
+    text-decoration: none;
+}
+
+
+.line {
+    text-align: center;
+}
+
+.line-2 {
+    text-align: center;
+    letter-spacing: 1em;
+}
+
+.center {
+    margin-top: 20%;
+}
+
+.padding-2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.padding-3 {
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.padding-4 {
+    margin-top: 20%;
+    padding-left: 3%;
+}
+
+.links {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin: 2% 2%;
+}
+
+.links1 {
+    text-decoration: none;
+    color: #EBF0F9;
+}
+
+.table {
+    color: #fff;
+    width: 300px;
+    font-family: serif;
+}
+
+.cels {
+    letter-spacing: -0.1em;
+}
+
+.cont {
+    margin-left: 25%;
+    margin-top: 2%;
+    background-color: #6eb3df;
+    height: 100px;
+    width: 670px;
+    opacity: 0.95;
+    padding-left: 5px;
+    border-radius: 8px;
+
+}
+
+.cont:hover {
+    opacity: 1.0;
+}
+
+.cont h5 {
+    font-family: Arial, sens-serif;
+}
+
+.first{
+    float: left;
+    width: 200px;
+    word-wrap: break-word;
+    height: 100px;
+}
+
+.fa-telegram {
+    color: #30a8dc;
+}
+
+.fa-envelope-square {
+    color: #d44b3d;
+}
+
+.fa-github {
+    color: #fff;
+}
+
+.fa-telegram, .fa-envelope-square, .fa-github {
+    font-size: 1.3em;
+}
+
+
+.second {
+    width: 440px;
+    float: left;
+    word-wrap: break-word;
+    height: 100px;
+}
+
+.word-space {
+    word-spacing: 10pt;
+}
+
+tbody tr {
+    background-color: #1556BB;
+}
+
+@media (max-width: 450px) {
+	.line-2 h1 {
+		font-size: 1.6em;
+		padding: 0;
+	}
+}
+
+@media (max-width: 450px) {
+	.carousel-item img {
+	height: 250px;
+	}
+}
+
+@media (max-width: 450px) {
+    .cont{
+    background-color: unset;
+    margin: 7% 0 5% 0;
+    padding: 0 0 0 3px;;
+    width: auto;
+    height: auto;
+    padding: 0 3px 0 3px;
+    }
+}
+
+@media (max-width: 450px) {
+    .first, .second {
+        width: auto;
+        height: auto;
+        float: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .padding-3, .padding-4 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+    background-size: 700%;
+    }
+}
+
+@media (max-width: 450px) {
+    hr {
+        display: block;
+        border: 0;
+        border-top: 10px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (max-width: 450px) {
+    input {
+        margin-bottom: 15px;
+    }
+}
+
+

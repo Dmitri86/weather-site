@@ -1,0 +1,70 @@
+{% extends 'weather_now/base.html' %}
+
+{% block title %}
+answer
+{% endblock %}
+
+{% block navbar %}
+    <li class="nav-item">
+        <a href="/" class="nav-link">Main</a>
+    </li>
+    <li class="nav-item">
+        <a href="/answer" class="nav-link active">Weather now</a>
+    </li>
+    <li class="nav-item">
+        <a href="/forecast" class="nav-link">Forecast weather</a>
+    </li>
+    <li class="nav-item">
+        <a href="/info" class="nav-link">Info</a>
+    </li>
+    {% endblock %}
+
+{% block content %}
+
+    <h2 class="line padding">Current weather and forecasts in your city</h2>
+    <h3 class="line padding">Weather in {{city }}</h3>
+    <h3 class="line padding"><img src="{{ icon }}" alt="icon">{{temp}}<span class="cels">°C</span> </h3>
+    <div class="container line">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8">
+                <table class="table table-md table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>Wind</td>
+                            <td>{{ wind }} m/s, {{ direction }}</td>
+                        </tr>
+                        <tr>
+                            <td>Cloudiness</td>
+                            <td>{{ description|title }}</td>
+                        </tr>
+                        <tr>
+                            <td>Pressure</td>
+                            <td>{{ pressure }} hpa</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+                            <td>{{ humidity }} %</td>
+                        </tr>
+                        <tr>
+                            <td>Sun rise</td>
+                            <td>{{ sunrise }}</td>
+                        </tr>
+                        <tr>
+                            <td>Sun set</td>
+                            <td>{{ sunset }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+    <a href="/forecast/{{city}}" class="links"><h2>5 day weather forecast</h2></a>
+    <a href="/" class="links"><h2>Choose another city</h2></a>
+
+
+
+{% endblock %}

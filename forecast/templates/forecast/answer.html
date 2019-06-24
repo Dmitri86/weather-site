@@ -1,0 +1,102 @@
+{% extends 'weather_now/base.html' %}
+
+{% block title %}
+    Weather Forecast
+{% endblock %}
+
+{% block navbar %}
+	<li class="nav-item">
+		<a href="/" class="nav-link">Main</a>
+	</li>
+	<li class="nav-item">
+		<a href="/answer" class="nav-link">Weather now</a>
+	</li>
+	<li class="nav-item">
+		<a href="/forecast" class="nav-link active">Forecast weather</a>
+	</li>
+	<li class="nav-item">
+		<a href="/info" class="nav-link">Info</a>
+	</li>
+	{% endblock %}
+
+{% block content %}
+    <h2 class="line padding">Forecast for 5 days in {{ city }}</h2>
+         <div class="cont">
+             <div class="first">
+                 <h5 class="padding-3 line">{{day0_DOW}}</h5>
+                 <h5 class="padding-4 line">{{day0_date}}</h5>
+             </div>
+             <div class="second">
+                  <h5>Day: {{day_0_d_t}}<span class="cels">°C</span>
+                      <img src="{{day_0_d_i}}" alt=""> {{day_0_d_d|title}}
+                      {{day_0_d_h|title}}% humidity</h5>
+                  <h5>Night: {{day_0_n_t}}<span class="cels">°C</span>
+                      <img src="{{day_0_n_i}}" alt=""> {{day_0_n_d|title}}
+                      {{day_0_n_h|title}}% humidity</h5>
+             </div>
+         </div>
+        <hr>
+        <div class="cont">
+             <div class="first">
+                 <h5 class="padding-3 line">{{day1_DOW}}</h5>
+                 <h5 class="padding-4 line">{{day1_date}}</h5>
+             </div>
+             <div class="second">
+                  <h5>Day: {{day_1_d_t}}<span class="cels">°C</span>
+                      <img src="{{day_1_d_i}}" alt=""> {{day_1_d_d|title}}
+                      {{day_1_d_h|title}}% humidity</h5>
+                  <h5>Night: {{day_1_n_t}}<span class="cels">°C</span>
+                      <img src="{{day_1_n_i}}" alt=""> {{day_1_n_d|title}}
+                      {{day_1_n_h|title}}% humidity</h5>
+             </div>
+         </div>
+        <hr>
+        <div class="cont">
+             <div class="first">
+                 <h5 class="padding-3 line">{{day2_DOW}}</h5>
+                 <h5 class="padding-4 line">{{day2_date}}</h5>
+             </div>
+             <div class="second">
+                  <h5>Day: {{day_2_d_t}}<span class="cels">°C</span>
+                      <img src="{{day_2_d_i}}" alt=""> {{day_2_d_d|title}}
+                      {{day_2_d_h|title}}% humidity</h5>
+                  <h5>Night: {{day_2_n_t}}<span class="cels">°C</span>
+                      <img src="{{day_2_n_i}}" alt=""> {{day_2_n_d|title}}
+                      {{day_2_n_h|title}}% humidity</h5>
+             </div>
+         </div>
+        <hr>
+        <div class="cont">
+             <div class="first">
+                 <h5 class="padding-3 line">{{day3_DOW}}</h5>
+                 <h5 class="padding-4 line">{{day3_date}}</h5>
+             </div>
+             <div class="second">
+                  <h5>Day: {{day_3_d_t}}<span class="cels">°C</span>
+                      <img src="{{day_3_d_i}}" alt=""> {{day_3_d_d|title}}
+                      {{day_3_d_h|title}}% humidity</h5>
+                  <h5>Night: {{day_3_n_t}}<span class="cels">°C</span>
+                      <img src="{{day_3_n_i}}" alt=""> {{day_3_n_d|title}}
+                      {{day_3_n_h|title}}% humidity</h5>
+             </div>
+         </div>
+        <hr>
+        <div class="cont">
+             <div class="first">
+                 <h5 class="padding-3 line">{{day4_DOW}}</h5>
+                 <h5 class="padding-4 line">{{day4_date}}</h5>
+             </div>
+             <div class="second">
+                  <h5>Day: {{day_4_d_t}}<span class="cels">°C</span>
+                      <img src="{{day_4_d_i}}" alt=""> {{day_4_d_d|title}}
+                      {{day_4_d_h|title}}% humidity</h5>
+                  <h5>Night: {{day_4_n_t}}<span class="cels">°C</span>
+                      <img src="{{day_4_n_i}}" alt=""> {{day_4_n_d|title}}
+                      {{day_4_n_h|title}}% humidity</h5>
+             </div>
+         </div>
+    <hr>
+    <a href="/" class="links"><h2>Choose another city</h2></a>
+
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'weather_now/base.html' %}
+
+{% block title %}
+    INFO
+{% endblock %}
+
+{% block navbar %}
+	<li class="nav-item">
+		<a href="/" class="nav-link">Main</a>
+	</li>
+	<li class="nav-item">
+		<a href="/answer" class="nav-link">Weather now</a>
+	</li>
+	<li class="nav-item">
+		<a href="/forecast" class="nav-link">Forecast weather</a>
+	</li>
+	<li class="nav-item">
+		<a href="/info" class="nav-link active">Info</a>
+	</li>
+	{% endblock %}
+
+{% block content %}
+    <div class="conteiner-fluid line padding-3 center">
+        <h3>All weather data has been used from the site
+            <a href="https://openweather.co.uk/" class="links1">OpenWeather</a></h3>
+        <h3>The site has been created by Dmitriy Zhirko.</h3>
+        <h3 id="contact">Contact us: <a href="https://t.me/DiMItRiY_930"><i class="fab fa-telegram"></i></a><a href="https://github.com/Dmitri86"><i class="fab fa-github"></i></a>
+            <a href="mailto:zhirkod@gmail.com"><i class="fas fa-envelope-square"></i></a></h3>
+    </div>
+
+
+{% endblock %}
