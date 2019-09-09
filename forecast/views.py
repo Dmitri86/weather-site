@@ -18,15 +18,15 @@ def forecast_answ(request, city):
         day4_day_of_week = tomorrow.tommorow(day3_day_of_week)
 
         dt = date.today()
-        day0_date = f"{dt.day}/{dt.month}/{dt.year}"
+        day0_date = str(dt.day)+ '/' + str(dt.month) +'/' + str(dt.year)
         next_dt_1 = dt + timedelta(days=1)
-        day1_date = f"{next_dt_1.day}/{next_dt_1.month}/{next_dt_1.year}"
+        day1_date = str(next_dt_1.day) + '/' + str(next_dt_1.month) + '/' + str(next_dt_1.year)
         next_dt_2 = dt + timedelta(days=2)
-        day2_date = f"{next_dt_2.day}/{next_dt_2.month}/{next_dt_2.year}"
+        day2_date = str(next_dt_2.day) +'/' + str(next_dt_2.month) + '/' + str(next_dt_2.year)
         next_dt_3 = dt + timedelta(days=3)
-        day3_date = f"{next_dt_3.day}/{next_dt_3.month}/{next_dt_3.year}"
+        day3_date = str(next_dt_3.day) + '/'+ str(next_dt_3.month) + '/' + str(next_dt_3.year)
         next_dt_4 = dt + timedelta(days=4)
-        day4_date = f"{next_dt_4.day}/{next_dt_4.month}/{next_dt_4.year}"
+        day4_date = str(next_dt_4.day) + '/' + str(next_dt_4.month) + '/' + str(next_dt_4.year)
 
 
 
